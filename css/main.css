@@ -1,0 +1,86 @@
+*, *:before, *:after {
+/*	border: thin solid red;*/
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+header, footer, div {
+	background-color: gray;
+/*	margin: 1%*/
+	/*margin: 0 1%;*/
+}
+
+header, footer, .wrapper {
+/*	margin: 0 auto;
+*/}
+
+.wrapper {
+/*	margin: 0;
+*/	background-color: white;
+}
+
+.row {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 1.5em;
+}
+
+header, footer {
+	height: 75px;
+}
+
+
+.half {
+	width: 48.6%;
+}
+
+.half:first-child {
+	float: left;
+}
+
+.half:nth-child(2) {
+	float: right;
+}
+
+.banner {
+	height: 311px;
+}
+
+.top-right {
+	height: 200px;
+}
+
+.small-height {
+	height: 92px;
+}
+
+.quarter {
+	width: 23.65%;
+	height: 184px;
+	margin-right: 1.8%;
+	float: left;
+}
+
+.quarter:last-child{
+	margin-right: 0;
+}
+
+.bottom-right {
+	margin-top: 1em;
+}
+
+footer.row {
+	margin-bottom: 1.5em;
+}
